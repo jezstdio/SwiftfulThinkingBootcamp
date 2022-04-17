@@ -8,19 +8,27 @@
 import SwiftUI
 
 struct ShapesBootcamp: View {
-    var progress: Double = 0.00
-    
     var body: some View {
-        ZStack {
-            Circle()
-                .trim(from: 0.0, to: progress)
-                .stroke(.red, lineWidth: 16)
-                .frame(width: 200, height: 200, alignment: .center)
-                .rotationEffect(Angle(degrees: 270.0))
-            Text("\(String(progress * 100))%")
-                .font(.title)
-                .bold()
-        }
+        // Circle() // Creates a circle
+        // Ellipse() // Creates an ellipse
+        // Capsule(style: .circular) // like ellipse, but has style: .circular, .continuous
+        //Rectangle()
+        RoundedRectangle(cornerRadius: 50) // like rectangle, but has corner radius
+            // .fill(Color.blue) // fill with blue color
+            // .foregroundColor(.pink) // same as fill
+            // .stroke() // add border
+            // .stroke(Color.orange) // add orange border
+            // .stroke(Color.blue, lineWidth: 16) // add blue border with 16px width
+            /*
+                .stroke(Color.red, style: StrokeStyle(
+                    lineWidth: 16, // line's width
+                    lineCap: .round, // .square, .butt, .round
+                    dash: [19]
+                ))
+             */
+            // .trim(from: 0.0, to: 0.5) // cut from the circle. You can make a loading circle with that.
+            .frame(width: 200, height: 100) // set's shape's container
+        
     }
 }
 
