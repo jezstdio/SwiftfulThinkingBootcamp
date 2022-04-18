@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A164076D280C11A00092357D /* ImageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164076C280C11A00092357D /* ImageBootcamp.swift */; };
+		A164076F280D57770092357D /* FrameBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164076E280D57770092357D /* FrameBootcamp.swift */; };
 		A1FC29C827FF82CC00984B63 /* SwiftfulThinkingBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC29C727FF82CC00984B63 /* SwiftfulThinkingBootcampApp.swift */; };
 		A1FC29CA27FF82CC00984B63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC29C927FF82CC00984B63 /* ContentView.swift */; };
 		A1FC29CC27FF82CF00984B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FC29CB27FF82CF00984B63 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		A164076C280C11A00092357D /* ImageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBootcamp.swift; sourceTree = "<group>"; };
+		A164076E280D57770092357D /* FrameBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameBootcamp.swift; sourceTree = "<group>"; };
 		A1FC29C427FF82CC00984B63 /* SwiftfulThinkingBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulThinkingBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FC29C727FF82CC00984B63 /* SwiftfulThinkingBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulThinkingBootcampApp.swift; sourceTree = "<group>"; };
 		A1FC29C927FF82CC00984B63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				A1FC29D92801BAE900984B63 /* ColorsBootcamp.swift */,
 				A1FC29DB2801EC4500984B63 /* GradientsBootcamp.swift */,
 				A1FC29F72803153200984B63 /* IconsBootcamp.swift */,
+				A164076E280D57770092357D /* FrameBootcamp.swift */,
 				A164076C280C11A00092357D /* ImageBootcamp.swift */,
 				A1FC29D52800B8AF00984B63 /* TextBootcamp.swift */,
 				A1FC29C927FF82CC00984B63 /* ContentView.swift */,
@@ -157,6 +160,7 @@
 			files = (
 				A1FC29DC2801EC4500984B63 /* GradientsBootcamp.swift in Sources */,
 				A1FC29DA2801BAE900984B63 /* ColorsBootcamp.swift in Sources */,
+				A164076F280D57770092357D /* FrameBootcamp.swift in Sources */,
 				A1FC29D82800C61B00984B63 /* ShapesBootcamp.swift in Sources */,
 				A1FC29CA27FF82CC00984B63 /* ContentView.swift in Sources */,
 				A1FC29D62800B8AF00984B63 /* TextBootcamp.swift in Sources */,
