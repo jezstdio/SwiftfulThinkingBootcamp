@@ -11,41 +11,48 @@ struct PickerBootcamp: View {
     
     @State var selection: String
     
-    let filterOptions: [String] = [ "Most Recent", "Most Popular", "Most Liked" ]
+    let filterOptions: [[String]] = [
+        ["Most Recent", "clock.fill"],
+        ["Most Popular", "person.3.fill"],
+        ["Most Liked", "hand.thumbsup.fill"]
+    ]
     
     init() {
-        selection = filterOptions[0]
+        selection = filterOptions[0][0]
     }
     
     var body: some View {
-        Picker(selection: $selection, label: EmptyView()) {
-            ForEach(filterOptions.indices, id: \.self) { index in
-                Text(filterOptions[index]).tag(filterOptions[index])
-            }
-        }
-        .pickerStyle(SegmentedPickerStyle())
+//        Picker(selection: $selection, label: EmptyView()) {
+//            ForEach(filterOptions.indices, id: \.self) { index in
+//                Text(filterOptions[index]).tag(filterOptions[index])
+//            }
+//        }
+//        .pickerStyle(SegmentedPickerStyle())
 
         
-//        Menu {
-//            Picker(
-//                selection: $selection,
-//                label: EmptyView()
-//            , content: {
-//                ForEach(filterOptions, id: \.self) { filter in
-//                    Text(filter).tag(filter)
-//                }
-//            })
-//        } label: {
-//            Text("Filter: \(selection)")
-//                .pickerStyle(MenuPickerStyle())
-//                .font(.headline)
-//                .accentColor(.white)
-//                .padding()
-//                .padding(.horizontal)
-//                .background(.blue)
-//                .cornerRadius(10.0)
-//                .shadow(color: Color.blue.opacity(0.5), radius: 10, x: 0, y: 10)
-//        }
+        Menu {
+            Picker(
+                selection: $selection,
+                label: EmptyView()
+            , content: {
+                ForEach(filterOptions, id: \.self) { filter in
+                    HStack {
+                        Text(filter[0]).tag(filter[0])
+                        Image(systemName: filter[1])
+                    }
+                }
+            })
+        } label: {
+            Text("Filter: \(selection)")
+                .pickerStyle(MenuPickerStyle())
+                .font(.headline)
+                .accentColor(.white)
+                .padding()
+                .padding(.horizontal)
+                .background(.blue)
+                .cornerRadius(10.0)
+                .shadow(color: Color.blue.opacity(0.5), radius: 10, x: 0, y: 10)
+        }
         
 //        VStack {
 //            Text("Age: \(selection)")
